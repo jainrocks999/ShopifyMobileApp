@@ -1,0 +1,7 @@
+//cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_540x.jpg?v=1642764351 540w, //cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_720x.jpg?v=1642764351 720w, //cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_900x.jpg?v=1642764351 900w, //cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_1080x.jpg?v=1642764351 1080w, //cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_1296x.jpg?v=1642764351 1296w, //cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_1512x.jpg?v=1642764351 1512w, //cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_1728x.jpg?v=1642764351 1728w, //cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_1944x.jpg?v=1642764351 1944w, //cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_2048x.jpg?v=1642764351 2048w, //cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_4472x.jpg?v=1642764351 4472w
+export const url = [
+  'https://cdn.shopify.com/s/files/1/0548/9570/6327/files/ankur_testimonal_540x.jpg?v=1642764351',
+  'https://cdn.shopify.com/s/files/1/0548/9570/6327/files/darshit_thakkar_testimonal_ecca1a90-65d8-44f1-85bf-79eaa2c36e1d_540x.jpg?v=1642664391',
+  'https://cdn.shopify.com/s/files/1/0548/9570/6327/files/anubha_testimonal_540x.jpg?v=1642764383',
+  'https://cdn.shopify.com/s/files/1/0548/9570/6327/files/manasi_shah_testimonal_540x.jpg?v=1642664223',
+];

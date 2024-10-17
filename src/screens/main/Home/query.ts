@@ -1,0 +1,439 @@
+export const query = `firstName
+id
+lastName
+email
+phone
+acceptsMarketing
+createdAt
+numberOfOrders
+defaultAddress{
+    address1
+    address2
+    city
+    company
+    country
+    countryCodeV2
+    firstName
+    formatted
+    formattedArea
+    id
+    lastName
+    latitude
+    longitude
+    zip
+    provinceCode
+    province
+    phone
+    name
+}
+addresses(first:10){
+    nodes{
+                address1
+                address2
+                city
+                company
+                country
+                countryCodeV2
+                firstName
+                formatted
+                formattedArea
+                id
+                lastName
+                latitude
+                longitude
+                zip
+                provinceCode
+                province
+                phone
+                name
+    }
+    edges{
+        cursor
+        node{
+            address1
+                address2
+                city
+                company
+                country
+                countryCodeV2
+                firstName
+                formatted
+                formattedArea
+                id
+                lastName
+                latitude
+                longitude
+                zip
+                provinceCode
+                province
+                phone
+                name
+        }
+    }
+}
+orders(first:30){
+    edges{
+        node{
+            billingAddress{
+                address1
+                address2
+                city
+                company
+                country
+                countryCodeV2
+                firstName
+                formatted
+                formattedArea
+                id
+                lastName
+                latitude
+                longitude
+                zip
+                provinceCode
+                province
+                phone
+                name
+            }
+            canceledAt
+            cancelReason
+            currencyCode
+            currentSubtotalPrice{
+                amount
+                currencyCode
+            }
+            currentTotalDuties{
+                amount
+                currencyCode
+            }
+            currentTotalPrice{
+                amount
+                currencyCode
+            }
+            currentTotalTax{
+                amount
+                currencyCode
+            }
+            customAttributes{
+                key
+                value
+            }
+            customerLocale
+            customerUrl
+          
+           discountApplications(first:10){
+               nodes{
+                   __typename
+                   allocationMethod
+                   targetSelection
+                   targetType
+                   value{
+                       __typename
+
+                   }
+               }
+               pageInfo{
+                   endCursor
+                   hasNextPage
+                   hasPreviousPage
+                   startCursor
+               }
+           }
+           edited
+           email
+           financialStatus
+           fulfillmentStatus
+           id
+           lineItems(first:20){
+               nodes{
+                   currentQuantity
+                   customAttributes{
+                       key
+                       value
+                   }
+                   discountAllocations{
+                       allocatedAmount{
+                           amount
+                           currencyCode
+                       }
+                       discountApplication{
+                           __typename
+                           allocationMethod
+                           targetSelection
+                           targetType
+                           value{
+                               __typename
+                           }
+                       }
+                   }
+                   discountedTotalPrice{
+                       amount
+                       currencyCode
+                   }
+                   originalTotalPrice{
+                       amount
+                       currencyCode
+                   }
+                   quantity
+                   title
+                   variant{
+                       availableForSale
+                       barcode
+                       compareAtPrice{
+                           amount
+                           currencyCode
+                       }
+                       currentlyNotInStock
+                       id
+                       image{
+                           altText
+                           height
+                           id
+                           url
+                           width
+                       }
+                       price{
+                           amount
+                           currencyCode
+                       }
+                       product{
+                           availableForSale
+                           collections(first:50){
+                               nodes{
+                                   title
+                                   id
+                               }
+                           }
+                           id
+                           images(first:10){
+                               nodes{
+                                   altText
+                                   height
+                                   id
+                                   url
+                                   width
+                               }
+                           }
+                         
+                       }
+                    quantityAvailable
+                    requiresShipping
+                    selectedOptions{
+                        name
+                        value
+                    }
+                    sellingPlanAllocations(first:20){
+                        nodes{
+                            checkoutChargeAmount{
+                                amount
+                                currencyCode
+                            }
+                            priceAdjustments{
+                                compareAtPrice{
+                                    amount
+                                    currencyCode
+                                }
+                                perDeliveryPrice{
+                                    amount
+                                    currencyCode
+                                }
+                                price{
+                                    amount
+                                    currencyCode
+                                }
+                                unitPrice{
+                                    amount
+                                    currencyCode
+                                }
+
+                            }
+                            remainingBalanceChargeAmount{
+                                amount
+                                currencyCode
+                            }
+                            sellingPlan{
+                                checkoutCharge{
+                                    type
+                                    value{
+                                        __typename
+                                    }
+                                }
+                                description
+                                id
+                                name
+                                options{
+                                    name
+                                    value
+                                }
+                                priceAdjustments{
+                                    adjustmentValue{
+                                        __typename
+                                    }
+                                    orderCount
+
+
+                                }
+                                recurringDeliveries
+                            }
+
+                    }
+                    
+                    
+                   }
+                   sku
+                   storeAvailability(first:20){
+                       nodes{
+                           available
+                           location{
+                               address{
+                                   address1
+                                   address2
+                                   city
+                                   country
+                                   countryCode 
+                                   formatted
+                                   latitude
+                                   longitude
+                                   phone
+                                   province
+                                   provinceCode
+                                   zip
+                               }
+                           }
+                           pickUpTime
+                           quantityAvailable
+                       }
+
+
+                   }
+                   title
+                   unitPrice{
+                       amount
+                       currencyCode
+                   }
+                   unitPriceMeasurement{
+                       measuredType
+                       quantityUnit
+                       quantityValue
+                       referenceUnit
+                       referenceValue
+
+                   }
+                   weight
+                   weightUnit
+                
+           }
+        }
+     }
+     
+     id
+     name
+     orderNumber
+     originalTotalDuties{
+         amount
+         currencyCode
+     }
+     originalTotalPrice{
+         amount
+         currencyCode
+     }
+     phone
+     processedAt
+     shippingAddress{
+         address1
+         address2
+         city
+         company
+         country
+         countryCodeV2
+         firstName
+         formatted
+         formattedArea
+         id
+         lastName
+         latitude
+         longitude
+         name
+         phone
+         province
+         provinceCode
+         zip
+     }
+     shippingDiscountAllocations{
+         allocatedAmount{
+             amount
+             currencyCode
+         }
+         discountApplication{
+             __typename
+             value{
+                  __typename
+             }
+             targetType
+             targetSelection
+             allocationMethod
+
+         }
+        
+          
+     }
+     statusUrl
+     subtotalPrice{
+         amount
+         currencyCode
+     }
+     successfulFulfillments{
+         fulfillmentLineItems{
+             nodes{
+                lineItem{
+                    title
+                    variant{
+                         price{
+                             amount
+                             currencyCode
+                         }
+                         image{
+                             id
+                             url
+                             width
+                         }
+                    }
+                }
+                quantity
+
+             }
+
+        
+
+         }
+         trackingCompany
+         trackingInfo{
+             number
+             url
+         }
+
+
+     }
+     totalPrice{
+         amount
+         currencyCode
+     }
+     totalRefunded{
+         amount
+         currencyCode
+     }
+     totalShippingPrice{
+          amount
+          currencyCode
+     }
+     totalTax{
+         amount
+         currencyCode
+     }
+
+   }
+    
+}
+     
+   
+}
+}`;

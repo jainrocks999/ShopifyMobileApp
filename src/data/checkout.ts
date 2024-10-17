@@ -1,0 +1,320 @@
+export default `  id
+appliedGiftCards{
+    amountUsed{
+        amount
+        currencyCode
+    }
+    balance{
+        amount
+        currencyCode
+    }
+    id
+    lastCharacters
+    presentmentAmountUsed{
+        amount
+        currencyCode
+    }
+}
+availableShippingRates{
+    ready
+    shippingRates{
+        handle
+        price{
+            amount
+            currencyCode
+        }
+        title
+    }
+}
+buyerIdentity{
+    countryCode
+}
+completedAt
+createdAt
+currencyCode
+customAttributes{
+    key
+    value
+}
+discountApplications(first:10){
+    edges{
+        cursor
+        node{
+            __typename
+            allocationMethod
+            targetSelection
+            targetType
+            value{
+                __typename
+            }
+        }
+    }
+}
+email
+lineItems(first:20){
+    edges{
+        cursor
+        node{
+            customAttributes{
+                key
+                value
+            }
+            discountAllocations{
+                allocatedAmount{
+                    amount
+                    currencyCode
+                }
+                discountApplication{
+                    __typename
+                    allocationMethod
+                    targetSelection
+                  targetType
+                  value{
+                      __typename
+                  }
+
+                }
+
+            }
+            id
+            quantity
+            title
+            unitPrice{
+                amount
+                currencyCode
+            }
+            variant{
+                availableForSale
+                barcode
+                compareAtPrice{
+                    amount
+                    currencyCode
+                }
+                currentlyNotInStock
+                id
+                image{
+                    altText
+                    height
+                    id
+                    url
+                    width
+                }
+               price{
+                   amount
+                   currencyCode
+               }
+               product{
+                   availableForSale
+                   collections(first:20){
+                       edges{
+                           node{
+                               id
+                               title
+                           }
+                       }
+                   }
+                   compareAtPriceRange{
+                       maxVariantPrice{
+                           amount
+                           currencyCode
+                       }
+                       minVariantPrice{
+                           amount
+                           currencyCode
+                       }
+                   }
+                   createdAt
+                   description
+                   descriptionHtml
+                   featuredImage{
+                       altText
+                       height
+                       id
+                       url
+                       width
+                   }
+                   handle
+                   id
+                   images(first:20){
+                       edges{
+                           cursor
+                           node{
+                               altText
+                               height
+                               id
+                               url
+                               width
+                           }
+
+                       }
+                       nodes{
+                           altText
+                           height
+                           id
+                           url
+                           width
+                       }
+
+                   }
+                   isGiftCard
+                   media(first:20){
+                       nodes{
+                           __typename
+                           id
+                           mediaContentType
+                           presentation{
+                              
+                               id
+                           }
+                       }
+                   }
+                   onlineStoreUrl
+                   options{
+                       id
+                       name
+                       values
+                   }
+                   priceRange{
+                       maxVariantPrice{
+                           amount
+                           currencyCode
+                       }
+                       minVariantPrice{
+                           amount
+                           currencyCode
+                       }
+                   }
+                   productType
+                   publishedAt
+                   requiresSellingPlan
+                   sellingPlanGroups(first:20){
+                       nodes{
+                           appName
+                           name
+                           options{
+                               name
+                               values
+                           }
+                           sellingPlans{
+                               nodes{
+                                    checkoutCharge{
+                                        type
+                                        value{
+                                            __typename
+                                        }
+                              
+                                    }
+                                    description
+                                    id
+                                    name
+                                    options{
+                                        name
+                                        value
+                                    }
+                                    priceAdjustments{
+                                        adjustmentValue{
+                                            __typename
+                                        }
+                                        orderCount
+                                    }
+                                    recurringDeliveries
+
+                               }
+                               pageInfo{
+                                   endCursor
+                                   hasNextPage
+                                   hasPreviousPage
+                                   startCursor
+                               }
+
+                           }
+
+                       }
+
+                   }
+
+
+               }
+            }
+
+        }
+      
+    }
+
+}
+lineItemsSubtotalPrice{
+    amount
+    currencyCode
+}
+note
+orderStatusUrl
+paymentDue{
+    amount
+    currencyCode
+}
+ready
+requiresShipping
+shippingAddress{
+    address1
+    address2
+    city
+    company
+    country
+    countryCodeV2
+    firstName
+    formatted
+    formattedArea
+    id
+    lastName
+    latitude
+    longitude
+    name
+    phone
+    province
+    provinceCode
+    zip
+}
+shippingDiscountAllocations{
+    allocatedAmount{
+        amount
+        currencyCode
+    }
+    discountApplication{
+        __typename
+        allocationMethod
+        targetSelection
+        targetType
+        value{
+            __typename
+        }
+    }
+
+}
+shippingLine{
+    handle
+    price{
+        amount
+        currencyCode
+    }
+    title
+}
+subtotalPrice{
+    amount
+    currencyCode
+}
+taxesIncluded
+taxExempt
+totalDuties{
+    amount
+    currencyCode
+}
+totalPrice{
+    amount
+    currencyCode
+}
+totalTax{
+    amount
+    currencyCode
+}
+updatedAt
+webUrl`;
